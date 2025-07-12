@@ -3,14 +3,13 @@
 #include <iostream>
 #include <string>
 
-class Timestamp
-{
-public:
+class Timestamp {
+  public:
     Timestamp();
     explicit Timestamp(int64_t microSecondsSinceEpoch);
     static Timestamp now();
     std::string toString() const;
 
-private:
+  private:
     int64_t microSecondsSinceEpoch_;
 };
